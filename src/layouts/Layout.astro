@@ -1,0 +1,69 @@
+---
+const { title } = Astro.props;
+
+import Navbar from "../components/Navbar.svelte";
+
+const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
+const url = "https://startupmission.kerala.gov.in/";
+
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kerala Startup Mission</title>
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/meanmenu.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/video.min.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/lightbox.css">
+	<link rel="stylesheet" href="assets/css/progess.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+	<link rel="stylesheet"  href="assets/css/colors/switch.css">
+	<link href="assets/css/colors/color-2.css" rel="alternate stylesheet" type="text/css" title="color-2">
+	<link href="assets/css/colors/color-3.css" rel="alternate stylesheet" type="text/css" title="color-3">
+	<link href="assets/css/colors/color-4.css" rel="alternate stylesheet" type="text/css" title="color-4">
+	<link href="assets/css/colors/color-5.css" rel="alternate stylesheet" type="text/css" title="color-5">
+	<link href="assets/css/colors/color-6.css" rel="alternate stylesheet" type="text/css" title="color-6">
+	<link href="assets/css/colors/color-7.css" rel="alternate stylesheet" type="text/css" title="color-7">
+	<link href="assets/css/colors/color-8.css" rel="alternate stylesheet" type="text/css" title="color-8">
+	<link href="assets/css/colors/color-9.css" rel="alternate stylesheet" type="text/css" title="color-9">
+</head>
+
+<body>
+
+		<Navbar client:load></Navbar>
+		<slot />
+
+		<!-- For Js Library -->
+		<script src="assets/js/jquery-2.1.4.min.js" is:inline></script>
+		<script src="assets/js/bootstrap.min.js" is:inline></script>
+		<script src="assets/js/popper.min.js" is:inline></script>
+		<script src="assets/js/owl.carousel.min.js" is:inline></script>
+		<script src="assets/js/jarallax.js" is:inline></script>
+		<script src="assets/js/jquery.magnific-popup.min.js" is:inline></script>
+		<script src="assets/js/lightbox.js" is:inline></script>
+		<script src="assets/js/jquery.meanmenu.js" is:inline></script>
+		<script src="assets/js/scrollreveal.min.js" is:inline></script>
+		<script src="assets/js/jquery.counterup.min.js" is:inline></script>
+		<script src="assets/js/waypoints.min.js" is:inline></script>
+		<script src="assets/js/jquery-ui.js" is:inline></script>
+		<script src="assets/js/gmap3.min.js" is:inline></script>
+		<script src="assets/js/switch.js" is:inline></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA" is:inline></script>
+
+		<script src="assets/js/script.js" is:inline></script>
+	</body>
+	</html>
